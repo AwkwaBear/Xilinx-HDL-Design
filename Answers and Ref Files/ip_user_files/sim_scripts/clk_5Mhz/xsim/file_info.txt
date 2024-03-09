@@ -1,0 +1,2 @@
+clk_5Mhz_sim_netlist.v,verilog,xil_defaultlib,../../../../clk_5Mhz/clk_5Mhz_sim_netlist.v,incdir="../../../../clk_5Mhz"
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Apr 12 13:37:11 2020
+# Process ID: 9432
+# Current directory: C:/Users/Tony/Desktop/lab9_1_4/lab9_1_4.runs/impl_1
+# Command line: vivado.exe -log grey_code_generator.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source grey_code_generator.tcl -notrace
+# Log file: C:/Users/Tony/Desktop/lab9_1_4/lab9_1_4.runs/impl_1/grey_code_generator.vdi
+# Journal file: C:/Users/Tony/Desktop/lab9_1_4/lab9_1_4.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source grey_code_generator.tcl -notrace

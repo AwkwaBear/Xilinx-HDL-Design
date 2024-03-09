@@ -1,0 +1,51 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: A:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto d1a47f34e2934593bcabec67b0072cd6 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot eight_bit_counter_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.eight_bit_counter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "eight_bit_counter_time_impl.sdf", for root module "eight_bit_counter".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "eight_bit_counter_time_impl.sdf", for root module "eight_bit_counter".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.FDRE_default
+Compiling module xil_defaultlib.D_ff_with_synch_reset_behavior_1...
+Compiling module xil_defaultlib.T_FF_heirarchal_18
+Compiling module xil_defaultlib.one_bit
+Compiling module simprims_ver.LUT4
+Compiling module xil_defaultlib.D_ff_with_synch_reset_behavior_1...
+Compiling module xil_defaultlib.T_FF_heirarchal_16
+Compiling module xil_defaultlib.one_bit_0
+Compiling module simprims_ver.LUT5
+Compiling module xil_defaultlib.D_ff_with_synch_reset_behavior_1...
+Compiling module xil_defaultlib.T_FF_heirarchal_14
+Compiling module xil_defaultlib.one_bit_1
+Compiling module simprims_ver.LUT6
+Compiling module xil_defaultlib.D_ff_with_synch_reset_behavior_1...
+Compiling module xil_defaultlib.T_FF_heirarchal_12
+Compiling module xil_defaultlib.one_bit_2
+Compiling module xil_defaultlib.D_ff_with_synch_reset_behavior_1...
+Compiling module xil_defaultlib.T_FF_heirarchal_10
+Compiling module xil_defaultlib.one_bit_3
+Compiling module xil_defaultlib.D_ff_with_synch_reset_behavior_9
+Compiling module xil_defaultlib.T_FF_heirarchal_8
+Compiling module xil_defaultlib.one_bit_4
+Compiling module xil_defaultlib.D_ff_with_synch_reset_behavior_7
+Compiling module xil_defaultlib.T_FF_heirarchal_6
+Compiling module xil_defaultlib.one_bit_5
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.D_ff_with_synch_reset_behavior
+Compiling module xil_defaultlib.T_FF_heirarchal
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module xil_defaultlib.eight_bit_counter
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot eight_bit_counter_time_impl

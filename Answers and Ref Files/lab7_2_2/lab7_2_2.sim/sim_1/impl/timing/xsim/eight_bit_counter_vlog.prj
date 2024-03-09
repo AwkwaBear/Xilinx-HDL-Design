@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"eight_bit_counter_time_impl.v" \
+
+# Do not sort compile order
+nosort

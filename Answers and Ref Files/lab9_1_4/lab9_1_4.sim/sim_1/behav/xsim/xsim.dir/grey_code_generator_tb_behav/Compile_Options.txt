@@ -1,0 +1,1 @@
+-wto "4f786660d268405898b9ebf8486644d0" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "grey_code_generator_tb_behav" "xil_defaultlib.grey_code_generator_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

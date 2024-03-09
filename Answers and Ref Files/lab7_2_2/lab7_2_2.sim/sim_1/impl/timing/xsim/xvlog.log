@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tony/Desktop/lab7_2_2/lab7_2_2.sim/sim_1/impl/timing/xsim/eight_bit_counter_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_ff_with_synch_reset_behavior
+INFO: [VRFC 10-311] analyzing module D_ff_with_synch_reset_behavior_11
+INFO: [VRFC 10-311] analyzing module D_ff_with_synch_reset_behavior_13
+INFO: [VRFC 10-311] analyzing module D_ff_with_synch_reset_behavior_15
+INFO: [VRFC 10-311] analyzing module D_ff_with_synch_reset_behavior_17
+INFO: [VRFC 10-311] analyzing module D_ff_with_synch_reset_behavior_19
+INFO: [VRFC 10-311] analyzing module D_ff_with_synch_reset_behavior_7
+INFO: [VRFC 10-311] analyzing module D_ff_with_synch_reset_behavior_9
+INFO: [VRFC 10-311] analyzing module T_FF_heirarchal
+INFO: [VRFC 10-311] analyzing module T_FF_heirarchal_10
+INFO: [VRFC 10-311] analyzing module T_FF_heirarchal_12
+INFO: [VRFC 10-311] analyzing module T_FF_heirarchal_14
+INFO: [VRFC 10-311] analyzing module T_FF_heirarchal_16
+INFO: [VRFC 10-311] analyzing module T_FF_heirarchal_18
+INFO: [VRFC 10-311] analyzing module T_FF_heirarchal_6
+INFO: [VRFC 10-311] analyzing module T_FF_heirarchal_8
+INFO: [VRFC 10-311] analyzing module eight_bit_counter
+INFO: [VRFC 10-311] analyzing module one_bit
+INFO: [VRFC 10-311] analyzing module one_bit_0
+INFO: [VRFC 10-311] analyzing module one_bit_1
+INFO: [VRFC 10-311] analyzing module one_bit_2
+INFO: [VRFC 10-311] analyzing module one_bit_3
+INFO: [VRFC 10-311] analyzing module one_bit_4
+INFO: [VRFC 10-311] analyzing module one_bit_5
+INFO: [VRFC 10-311] analyzing module glbl

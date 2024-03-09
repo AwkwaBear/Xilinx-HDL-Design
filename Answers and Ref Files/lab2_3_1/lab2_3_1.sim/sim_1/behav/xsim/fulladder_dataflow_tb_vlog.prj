@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab2_3_1.srcs/sources_1/new/lab2_3_1.v" \
+"//STORAGE/users/undergraduate/anthony.gasbarro/Desktop/lab2/lab2_3_1/fulladder_dataflow_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

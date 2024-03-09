@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Tony/Desktop/EE 260 Lab/lab7_2_1/lab7_2_1.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Tony/Desktop/EE 260 Lab/lab7_2_1/lab7_2_1.srcs/sim_1/new/eight_bit_counter_tb.v,1585527891,verilog,,,,eight_bit_counter_tb,,,,,,,,
+C:/Users/Tony/Desktop/EE 260 Lab/lab7_2_1/lab7_2_1.srcs/sources_1/imports/new/T_ff_enable_behavior.v,1585462848,verilog,,C:/Users/Tony/Desktop/EE 260 Lab/lab7_2_1/lab7_2_1.srcs/sources_1/new/eight_bit_counter.v,,T_ff_enable_behavior,,,,,,,,
+C:/Users/Tony/Desktop/EE 260 Lab/lab7_2_1/lab7_2_1.srcs/sources_1/new/eight_bit_counter.v,1585528042,verilog,,C:/Users/Tony/Desktop/EE 260 Lab/lab7_2_1/lab7_2_1.srcs/sources_1/new/one_bit.v,,eight_bit_counter,,,,,,,,
+C:/Users/Tony/Desktop/EE 260 Lab/lab7_2_1/lab7_2_1.srcs/sources_1/new/one_bit.v,1585527927,verilog,,C:/Users/Tony/Desktop/EE 260 Lab/lab7_2_1/lab7_2_1.srcs/sim_1/new/eight_bit_counter_tb.v,,one_bit,,,,,,,,

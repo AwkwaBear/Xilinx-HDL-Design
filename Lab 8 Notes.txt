@@ -1,0 +1,115 @@
+Todays lab (Lab 8) will be on the Architectural Wizard and IP Catalog
+
+Make sure you read all of the introductory sections in this lab's instructions as it is dealing with some new areas of Vivado and some concepts that we have not as of yet been introduced to. This lab will introduce the IP catalog, it is basically a section  where you can instance premade circuits that provide certain functions in Vivado. This lab will use a clock circuit and a counter circuit that are found within the IP catalog.
+
+This lab has 3 parts. Part 1-1 and 1-2 are MANDATORY.
+
+Part 2-1 is OPTIONAL.
+
+Tips for each section:
+
+Part 1-1:
+
+	Instructions for navigating to the Clocking Wizard:
+		-Create a project like normal until you are at the main project screen (no need to create design source just yet, add constraints file like usual)
+		-click on "IP Catalog" on the lefthand "Flow Navigator" Bar
+		-In the IP catalog window scroll down to "FPGA Features and Design" and click the dropdown
+		-Click the dropdown for "Clocking"
+		-Double click on "Clocking Wizard"
+	
+	-Follow the above instructions to use the clocking wizard to create a module for your clock. When in the clocking wizard make sure you name your clock so you can reference it (at the clocking wizard page rename it something like "clk_5Mhz" under component name, just above the 5 tabs)
+	
+	-Once you navigate to the "Clocking Wizard" simply follow the directions given on the second page of the lab just below the diagram
+	
+	-The clk component you just made will appear in the Sources window where your verilog modules normally appear and the clock must be instantiated and connected to a larger module as you have done in the past (this will be done at the end)
+		-The clock module has 3 input/output ports which can be seen when you open the clk_5Mhz module as you normally do for other verilog modules:	
+			- `output clk_out1` This is the port which will output the 5Mhz square wave
+			- `output locked` This is a port for the DCM lock signal (you do not need to worry too much about this, simply forward this to your top level module's output)
+			- `input clk_in1` This is the input which will come from your testbench file (It would normally come from the XDC file if we were implementing this on the Basys boards) 
+	
+	-Create another verilog module called "pulse_generator" and in that you will include all of the logic for the clock divider.
+		-This new module will contain logic to handle a reset, enable, and the actual voltage divider.
+		-In your module include `integer count = 0;` at the beginning, this is our counter which we will use to determine how many clock pulses we have received. You can use a statement that says 
+		```
+		if (count % 5000000 == 0)
+			Q = ~Q;
+		```
+		to only cycle the clock every 5 million cycles of the input clock. (Basically what is happening is our circuit is given a 5 MHz wave which must be converted into a 1Hz wave)
+		-You must figure out yourself how to implement the reset and enable functions. The circuit should only continue counting and changing output when enable = 1. When reset = 1 then the count must reset to zero and the output should return to 0
+	-Create a top level module (call it lab8_1_1 or something) that will instantiate your clock module and your pulse_generator module and hook them up accordingly.
+	
+	-Create a test bench file that will create a clock signal that alternate at 5 Mhz (switches state every 100 ns, use #100 to wait 100 ns in a test bench file) simulate your design for at least 5 seconds
+	
+	-Demonstrate that the reset and enable functions work in your design at some point in your testbench/simulation
+	
+Part 1-2:
+	-Create a new project called lab8_1_2 and import all of the modules that were created in lab2_2_1
+	
+	-Your goal here is to modify the project so that, instead of showing 0-9 on one display with a single LED to show when count goes above 9, you will now show numbers 0-15 using both displays.
+	
+	-The issue is that the Basys board only allows you to send one set of seg0-seg6 outputs at any given time. So simply changing the anode value to turn on both displays will just display the same number on both 7segment displays. The solution is that you must rapidly update the displays one at a time. 
+	
+	-create a clock signal using the clocking wizard as you did in part 1-1
+	
+	-Instance the clock module in the top level directory
+	
+	-add a "clk" input to the top level design (this is the 100Mhz input to the clock module created above)
+	
+	-add the pulse_generator module created in the above part and modify the output to be 500 Hz instead of 1 Hz
+	
+	-add pulse_generator inputs to the top level module
+	
+	-create an "always@(posedge clk_in) where clk_in is the output of the pulse generator
+	
+	-design the circuit so that it will set the value of an[3:0] to select one display and update it half of the clock 
+	cycles then select the other display to update that one the other half of the time.
+	
+	-Create a test bench file that will that your circuit rapidly updates one 7segment display at a time.
+	
+	
+
+Part 2-1(Optional):
+	-Create a new project called lab8_2_1
+	
+	-Import everything from the previous module (part 1-2)
+	
+	-This section will create a new top level module that will instance the entire module from part 1-2 inside of a new top level module that will instance two counting circuits which will send their output to the lab8_1_2 module. 
+	
+	-Module 8_1_2 must be modified to take two 4 bit inputs and update each display individually
+	
+	-click IP catalog and navigate to the Binary counter (shown in the image above Part 2-1 instructions)
+		-Set the following options
+			Basic Tab:
+				-Implement using: fabric
+				-output width: 4
+				-increment value: 1
+				-Loadable UNCHECKED
+				-restrict count checked
+				-Final count value 9
+				-count mode: UP
+				-check threshold
+				-threshold value: 9
+			Control Tab:
+				-Clock Enable Checked
+				-Everything else default
+			
+	-The counter has the port arrangement:
+		-input CLK (normal clock input)
+		-input CE  (clock enable signal, when = 0 the circuit will not count)
+		-output Q[3:0] (counter output)
+		-output THRESH0 (Signal that is 1 when the circuit has reached 9)
+		
+	-You will need to instance both counters and wire them in a way that will cause them to count sequentially from 00-99 in order. This can be done by utilizing the thresh0 output of one counter and the clk and clk enable of the other
+	
+	-you also must modify the pulse generator to take in the 5Mhz clk signal from the created module and output two clock different clock signals, one that is 1Hz for the counters and another that is 500 Mhz for the 7 segment displays
+	
+	-Connect the counter outputs to the modified version of the lab8_1_2 module
+	
+	-If your 10s place digit counts up one clock cycle early that is okay
+	
+	-Create a testbench to show that the output works properly
+
+	
+	
+	
+			

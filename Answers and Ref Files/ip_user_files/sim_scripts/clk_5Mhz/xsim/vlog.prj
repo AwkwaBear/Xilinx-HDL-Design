@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "../../../../clk_5Mhz" \
+"../../../../clk_5Mhz/clk_5Mhz_sim_netlist.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

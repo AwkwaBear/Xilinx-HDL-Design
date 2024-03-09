@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Tony/Desktop/lab7_2_2/lab7_2_2.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Tony/Desktop/lab7_2_2/lab7_2_2.srcs/sources_1/imports/new/D_ff_with_synch_reset_behavior.v,1585529336,verilog,,C:/Users/Tony/Desktop/lab7_2_2/lab7_2_2.srcs/sources_1/new/T_FF_heirarchal.v,,D_ff_with_synch_reset_behavior,,,,,,,,
+C:/Users/Tony/Desktop/lab7_2_2/lab7_2_2.srcs/sources_1/imports/new/eight_bit_counter.v,1585529745,verilog,,,,eight_bit_counter,,,,,,,,
+C:/Users/Tony/Desktop/lab7_2_2/lab7_2_2.srcs/sources_1/imports/new/one_bit.v,1585529542,verilog,,C:/Users/Tony/Desktop/lab7_2_2/lab7_2_2.srcs/sources_1/imports/new/eight_bit_counter.v,,one_bit,,,,,,,,
+C:/Users/Tony/Desktop/lab7_2_2/lab7_2_2.srcs/sources_1/new/T_FF_heirarchal.v,1585530548,verilog,,C:/Users/Tony/Desktop/lab7_2_2/lab7_2_2.srcs/sources_1/imports/new/one_bit.v,,T_FF_heirarchal,,,,,,,,

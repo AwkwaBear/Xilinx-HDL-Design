@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab7_2_2.srcs/sources_1/imports/new/D_ff_with_synch_reset_behavior.v" \
+"../../../../lab7_2_2.srcs/sources_1/new/T_FF_heirarchal.v" \
+"../../../../lab7_2_2.srcs/sources_1/imports/new/one_bit.v" \
+"../../../../lab7_2_2.srcs/sources_1/imports/new/eight_bit_counter.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

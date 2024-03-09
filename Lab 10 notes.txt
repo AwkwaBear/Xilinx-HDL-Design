@@ -1,0 +1,49 @@
+Lab 10 Notes:
+
+This lab follows upon what we have done in the past with ASM charts.
+
+The introduction shows some things that you should be familiar with:
+	-A rectangle is a State box, and when an input is shown inside it represents a Moore output
+	-A Diamond represents a Decision point where the name of a given input is inside the diamond and the branching paths for possible values of that input are shown below
+	-An ellipse shows a Moore output which is dependent on either the transition between states and/or a given input
+	
+Section 1-1 for this Lab is MANDATORY
+
+Section 1-2 is not applicable and is not required to be performed as it is just to implement section 1-1 onto the Basys board.
+
+Section 2-1 is OPTIONAL
+
+
+This lab is much more difficult than previous assignments as you will be given a function that must be performed and you are given a bunch of free reign on how you decide to implement it.
+
+Since this is the last lab I will simply give you some hints on how do design the module and it is up to you to figure out how to implement it.
+
+Part 1-1:
+	-This device will take in two 3 bit values (mulitplicand and multiplier) and create a 6 bit output that is the product
+	-One way to perform this is to simply add a number to itself as many times as the value of the other number
+		e.g. 5*6 = 5+5+5+5+5+5
+
+		
+	-Numbers for the multiplicand and the multiplier will be input and then a "start" signal will let the circuit know to begin computing
+	
+	-After the circuit finishes its computation and the final value is being output on the "product" bus, the "done" signal will output as '1'
+	
+	-You do not necessarily need to implement all of the functions described in the directions such as generating the "start, shift, add, and done" signals. However, you need to be able to produce the exact waveform shown in the lab instructions [except the "MUL_SIZE[31:0]" portion on the bottom]
+
+Part 1-2:
+	-This section is not necessary to be performed as it requires the Basys board
+	
+Part 2-1[OPTIONAL]:
+	-This section asks that you first modify the design above to multiply two 4-bit numbers and it requires you to showcase basically all of the abilities you have learned from previous OPTIONAL lab sections
+	
+	-You must first implement the 4 bit multiplicand and multipliers as a 32x4 ROM
+	
+	-Next you must use the clocking wizard to create a 5Mhz clock as an input to your circuit
+	
+	-Finally you must take your output from the product generated in the multiplier circuit and output it to 3 seven segment displays [this is similar to what is performed in lab8_2_1]
+		-This will require you to convert a 3 digit number two 3 invidual binary number representing their digits
+			e.g. 256 in binary is 11111111
+				to display it in decimal(on a seven segment) you need 2, 5, and 6 in binary which are 0010, 0101, and 0110 respectively.
+		-Look up a Verliog module that can convert a 3 digit binary number to 3 individual binary digits
+	
+	-This portion may be complicated to complete without a basys board, it requires a good many steps using various methods from different optional lab portions but if you are unable to complete any portion of it but can explain the steps required to implement that portion I may be willing to give credit. Just give your best attempt

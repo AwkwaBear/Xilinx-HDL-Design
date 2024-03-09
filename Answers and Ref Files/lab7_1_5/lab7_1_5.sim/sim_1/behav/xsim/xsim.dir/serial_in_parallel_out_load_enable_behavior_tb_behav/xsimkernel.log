@@ -1,0 +1,7 @@
+Running: xsim.dir/serial_in_parallel_out_load_enable_behavior_tb_behav/xsimk.exe -simmode gui -wdb serial_in_parallel_out_load_enable_behavior_tb_behav.wdb -simrunnum 0 -socket 64993
+Design successfully loaded
+Design Loading Memory Usage: 5248 KB (Peak: 5248 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 5896 KB (Peak: 5896 KB)
+Simulation CPU Usage: 46 ms

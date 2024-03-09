@@ -1,0 +1,69 @@
+@students below is the instructions for lab 7
+I am going to pin this message so if you are looking for it click on the pin icon at the top of the chat, its the second icon from the right directly above the chat.
+```
+## LAB 7 INSTRUCTIONS ##
+
+Since we have been performing the Xilinux labs slightly out of order, the instructions for this lab will tell you to name each of your sections "lab 6_X_X" however, this is lab 7 for us so you should name each section "lab 7_X_X"
+
+Labs have all been shifted to online now and because of this, you MUST PROVIDE A SCREENSHOT OF A SIMULATION FOR EVERY CIRCUIT YOU CREATE!! (in addition to the screenshots/code block of your module)
+Any lab section completed where the instructions direct you to implement a module on the board must now be shown to work via a simulation test bench instead. 
+
+
+Test benches should show the major functions of your circuit but need not display every single input possibility.
+Use your discretion to design an adequate testbench but make sure it will prove all functions of your code work.
+If a section of a lab already has you create a testbench then just screenshotting that portion of the lab is adequate to put in your report, you do not need to make an additional testbench simulation.
+
+This lab has many optional sections but many just require you to modify something from the previous mandatory section or to copy and paste the code given into a module. I recommend trying as many of the sections of this lab as possible.
+
+Mandatory parts for this lab are:
+	-part 1-1
+	-part 1-4
+	-part 2-1
+	-part 2-3
+	
+Optional portions for this lab are:
+	-part 1-2
+	-part 1-3
+	-part 1-5
+	-part 2-2
+	
+Tips for each section:
+
+	Part 1-1:
+		-This part is only asking that you copy and paste the code given just before the prompt
+		-You must create a test bench to test the behavior and prove your output, follow the screenshot given in the instructions and ensure that your output matches correctly
+		
+	Part 1-2[Optional]: 
+		-The code is exactly the same as part 1-1 except now you are adding a SET function to the register
+		-when SET=1 the register's output will be set to '1111'
+		-WARNING: when naming the variable for your set input DO NOT name the variable as 'input set' because 'set' spelled lowercase is a keyword in the constraints file and cannot be used as a variable name. you should name your variable in all caps or something e.g. "input SET"
+		
+	Part 1-3[Optional]:
+		-Copy the code from the module given as "delay_line3_behavior"
+		-create a test bench for the code based on the simulation graph given
+		
+	
+	Part 1-4:
+		-Copy the code from the module given as "Parallel_in_serial_out_load_enable_behavior"
+		-create a test bench for the code based on the simulation graph given
+		
+	Part 1-5[Optional]:
+		-This section wants a serial input (one bit at a time) and a parallel output
+			e.g. 
+		-remove load function and replace it with a series of assignments that shifts each bit in the shift_reg over by one then sets the "shiftIn" bit to the least significant bit in the register
+	
+	Part 2-1:
+		-Create a counter using the T flip-flop created in lab 5_2_5 and gate level modeling in between according to the diagram. If you didn't create that section before (it was an optional lab portion) just copy and paste the code given in the instructions of that lab and create module for it into your project
+		-create your own test bench file based on the given graph
+		-Heirarchal means that you must instance the T Flip flop module and then connect gates separately in a higher level module (similar to lab 2-2-1)
+		-you have to follow the diagram closely, the diagram shows a 4 bit counter and you are supposed to make an 8 bit counter, keep in mind that all of the flip flop outputs have an AND gate on the output EXCEPT the last flip flop in the diagram
+		
+	Part 2-2[Optional]:
+		-use the D flip flop created in lab 5_2_3 but make sure to modify the reset to active on a 0 input rather than a high input (change "(clear)" to "(!clear)" in the if statement at the top
+		-create a module that functions as T FF from the D FF using the diagram shown in section 2-1-8
+		-follow the same exact process as part 2-1 to create the 8 bit counter
+		
+	Part 2-3:
+		-copy and paste the code that is given into a module. Keep in mind the given code does not include a definition for inputs/outputs so take a look at the prompt to make sure those are defined properly
+		-create a test bench following the given graph and verify the output
+```

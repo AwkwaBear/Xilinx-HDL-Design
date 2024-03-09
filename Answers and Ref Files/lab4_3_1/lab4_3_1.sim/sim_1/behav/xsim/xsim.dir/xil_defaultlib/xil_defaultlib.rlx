@@ -1,0 +1,8 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Tony/Desktop/lab4_3_1/lab4_3_1.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Tony/Desktop/lab4_3_1/lab4_3_1.srcs/sources_1/imports/lab4_3_1/lab2_3_1.v,1580516770,verilog,,C:/Users/Tony/Desktop/lab4_3_1/lab4_3_1.srcs/sources_1/imports/lab4_3_1/rca_dataflow.v,,fulladder_dataflow,,,,,,,,
+C:/Users/Tony/Desktop/lab4_3_1/lab4_3_1.srcs/sources_1/imports/lab4_3_1/rca_dataflow.v,1580516786,verilog,,C:/Users/Tony/Desktop/lab4_3_1/lab4_3_1.srcs/sources_1/new/rca_dataflow_tb.v,,rca_dataflow,,,,,,,,
+C:/Users/Tony/Desktop/lab4_3_1/lab4_3_1.srcs/sources_1/new/rca_dataflow_tb.v,1582533361,verilog,,,,rca_dataflow_tb,,,,,,,,
